@@ -1,0 +1,11 @@
+.widget-prop {
+    width: 384!important;
+    height: 620px!important;
+}
+
+
+@media(max-width: 786px){
+    .widget-prop {
+        
+    }
+}
