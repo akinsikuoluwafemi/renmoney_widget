@@ -131,6 +131,23 @@ export default function Widget() {
 
   
 
+  const steps = [
+    {
+      id: 1,
+      title: "Eligibility Check",
+      content: <Eligibility />,
+    },
+    {
+      id: 2,
+      title: "Personal Details",
+      content: <PersonalDetails />,
+    },
+    {
+      id: 3,
+      title: "Employment Details",
+      content: <EmploymentDetails />,
+    },
+  ];
 
   const {step, firstName, lastName, middleName, email, stateOfOrigin, lga } = state;
   const values = {firstName, lastName, middleName, email, stateOfOrigin, lga, income, bvn, dob,phone,gender,employmentStatus, residentialStatus, residentialAddress, dateMovedIn, martitalStatus, education, employerName, employerSector, employmentStartDate, officeAddress,workEmail }

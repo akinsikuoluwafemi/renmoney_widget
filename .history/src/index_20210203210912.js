@@ -9,9 +9,9 @@ import { Provider } from 'redux';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider>
+
       <App />
-    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
