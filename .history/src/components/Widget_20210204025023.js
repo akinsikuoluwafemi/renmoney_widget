@@ -287,7 +287,7 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
       <div className={modalOpen ? `show-widget` : `hide-widget`}>
         <div className="show-widget-content">
           <Space>
-            <div className="mr-auto">
+            <div>
               <img className="my-2" src={RenmoneyLogo} alt="renmoney logo" />
               <h5 className="mb-4">Welcome to our payment section.</h5>
             </div>
@@ -295,7 +295,7 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
             <Button shape="circle" danger
             onClick={() => {
 
-            onBoardingAction();
+            // onBoardingAction();
             showModalAction();
             }}
             

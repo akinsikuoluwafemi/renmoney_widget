@@ -274,7 +274,7 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
   };
 
   return (
-    <div>
+    <div >
       <button
         style={{ background: "#F15822", border: "none", color: "#fff" }}
         type="button"
@@ -286,23 +286,17 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
 
       <div className={modalOpen ? `show-widget` : `hide-widget`}>
         <div className="show-widget-content">
-          <Space>
-            <div className="mr-auto">
-              <img className="my-2" src={RenmoneyLogo} alt="renmoney logo" />
-              <h5 className="mb-4">Welcome to our payment section.</h5>
-            </div>
+          <Step>
 
-            <Button shape="circle" danger
-            onClick={() => {
+          <div>
+            <img className="my-2" src={RenmoneyLogo} alt="renmoney logo" />
+            <h5 className="mb-4">Welcome to our payment section.</h5>
+          </div>
 
-            onBoardingAction();
-            showModalAction();
-            }}
-            
-            >
+          <Button  shape="circle" danger>
               X
-            </Button>
-          </Space>
+          </Button>
+          </Step>
 
           {onBoarding ? (
             // <Stepper steps={steps} />

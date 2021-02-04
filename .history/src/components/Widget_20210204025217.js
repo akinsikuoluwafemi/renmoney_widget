@@ -295,7 +295,7 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
             <Button shape="circle" danger
             onClick={() => {
 
-            onBoardingAction();
+            // onBoardingAction();
             showModalAction();
             }}
             

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Widget.css';
 import RenmoneyLogo from '../img/renmoney-logo.svg';
-import { Button,message , Space} from 'antd';
+import { Button,message } from 'antd';
 import Eligibility from "./EligibilityCheck";
 import PersonalDetails from "./PersonalDetails";
 import EmploymentDetails from "./EmploymentDetails";
@@ -274,7 +274,7 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
   };
 
   return (
-    <div>
+    <div >
       <button
         style={{ background: "#F15822", border: "none", color: "#fff" }}
         type="button"
@@ -286,23 +286,14 @@ function Widget({ onBoardingAction, onBoarding, showModalAction, modalOpen }) {
 
       <div className={modalOpen ? `show-widget` : `hide-widget`}>
         <div className="show-widget-content">
-          <Space>
-            <div className="mr-auto">
-              <img className="my-2" src={RenmoneyLogo} alt="renmoney logo" />
-              <h5 className="mb-4">Welcome to our payment section.</h5>
-            </div>
+          <div>
+            <img className="my-2" src={RenmoneyLogo} alt="renmoney logo" />
+            <h5 className="mb-4">Welcome to our payment section.</h5>
+          </div>
 
-            <Button shape="circle" danger
-            onClick={() => {
-
-            onBoardingAction();
-            showModalAction();
-            }}
-            
-            >
+          <Button DANGE shape="circle">
               X
-            </Button>
-          </Space>
+          </Button>
 
           {onBoarding ? (
             // <Stepper steps={steps} />
